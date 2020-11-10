@@ -32,7 +32,10 @@
                 <a-obj-model src="#signpanel_obj" mtl="#signpanel_mtl" position="0 0 0" rotation="-100 0 0" scale="0.05 0.05 0.05" visible="true"></a-obj-model>
 
                 <!-- a-entityタグでオブジェクトやアニメーションの定義をまとめる -->
-                
+                <a-entity>
+                    <!-- アニメーションもHTMLタグで定義可能 -->
+                    <a-animation attribute="rotation" dur="5000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+                </a-entity>
 
                 <!-- テキストも描画可能 -->
                 <a-text value="Augmented" position='-0.8 1.9 -0.1' rotation="0 0 0" scale="1.5 1.5 1.5" color="#111111"></a-text>
