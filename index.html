@@ -18,28 +18,21 @@
         <!-- OBJファイルはモデル形状、MTLファイルはテクスチャ情報 -->
         <!-- ここで指定したIDを呼び出し時に使う -->
         <a-assets>
-            <a-asset-item id="signpanel_mtl" src="static/models/signpanel/signpanel.mtl"></a-asset-item>
-            <a-asset-item id="signpanel_obj" src="static/models/signpanel/signpanel.obj"></a-asset-item>
+            <a-asset-item id="signpanel_mtl" src="obj/12221_Cat_v1_l3.mtl"></a-asset-item>
+            <a-asset-item id="signpanel_obj" src="obj/12221_Cat_v1_l3.obj"></a-asset-item>
         </a-assets>
 
-        <a-assets>
-            <a-asset-item id="grass_obj" src="static/models/grass/grass.obj"></a-asset-item>
-            <a-asset-item id="grass_mtl" src="static/models/grass/grass.mtl"></a-asset-item>
-        </a-assets>
+        
 
         <!-- ARオブジェクトを描画するシーンの定義 -->
         <a-scene stats embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
             <!-- ARマーカに対する描画オブジェクト -->
-            <a-marker preset="custom" type="pattern" url="static/marker/pattern.patt">
+            <a-marker preset="custom" type="pattern" url="img/marker.patt">
                 <!-- オブジェクト1つめの配置 -->
                 <a-obj-model src="#signpanel_obj" mtl="#signpanel_mtl" position="0 0 0" rotation="-100 0 0" scale="0.05 0.05 0.05" visible="true"></a-obj-model>
 
                 <!-- a-entityタグでオブジェクトやアニメーションの定義をまとめる -->
-                <a-entity>
-                    <a-obj-model src="#grass_obj" mtl="#grass_mtl" position="-0.3 0 0" rotation="-90 0 0" scale="0.03 0.03 0.03" visible="true"></a-obj-model>
-                    <!-- アニメーションもHTMLタグで定義可能 -->
-                    <a-animation attribute="rotation" dur="5000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
-                </a-entity>
+                
 
                 <!-- テキストも描画可能 -->
                 <a-text value="Augmented" position='-0.8 1.9 -0.1' rotation="0 0 0" scale="1.5 1.5 1.5" color="#111111"></a-text>
