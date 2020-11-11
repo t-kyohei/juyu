@@ -53,6 +53,30 @@
                 <a-text value="Augmented" position="0 0.8 0" rotation="0 0 0" scale="1.5 1.5 1.5" color="#111111"></a-text>
                 <a-text value="Reality" position="0 0.8 0" rotation="0 0 0" scale="1.5 1.5 1.5" color="#111111"></a-text>
             </a-marker>
+            
+            <!-- ARマーカに対する描画オブジェクト -->
+            <a-marker preset="custom" type="pattern" url="img/pattern-ei-child_face.patt">
+            
+                   <a-entity 
+                      obj-model="obj: url(obj/13500_Wedding_Cake_v1_L1.obj);
+                  mtl: url(obj/113500_Wedding_Cake_v1_L1.mtl)"
+                      scale="0.02 0.02 0.02"
+                      rotation="-90 0 0"
+                  >
+                  </a-entity>
+                <!-- オブジェクト1つめの配置 -->
+                 <!--<a-obj-model src="#signpanel_obj" mtl="#signpanel_mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0" visible="true"></a-obj-model>
+
+                <!-- a-entityタグでオブジェクトやアニメーションの定義をまとめる -->
+               <!-- <a-entity>
+                    <!-- アニメーションもHTMLタグで定義可能 -->
+                  <!--  <a-animation attribute="rotation" dur="5000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+         -->
+              <!--  </a-entity>
+
+                <!-- テキストも描画可能 -->
+                <a-text value="wedding" position="0 0.8 0" align="center"></a-text>
+            </a-marker>
 
 
             <!-- カメラオブジェクトの配置 -->
