@@ -1,0 +1,50 @@
+newmtl 初期設定マテリアル 2
+illum 7
+Kd 0.0588235 0.054902 0.054902
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.4
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl 初期設定マテリアル 3
+illum 7
+Kd 0.0588235 0.054902 0.054902
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.4
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl 初期設定マテリアル 4
+illum 7
+Kd 0.0313726 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.4
+Ns 16
+Ks 1 1 1
+adobe_glow 0
