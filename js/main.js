@@ -10,7 +10,8 @@ var text = document.getElementById("code").value;
 		alert("ツールが起動した");
 	    window.location.href = './main/'; 
 	}else if(text =="123"){	
-	     alert("故障したツールが起動したが、読み取りはできるようだ。");
+	     alert("故障したツールが起動した。
+	            読み取り自体はできるようだ。");
 	    window.location.href = './niam/'; 
 		
 	}else{
