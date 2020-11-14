@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Hello World!" />
+  <Content type="html">
+    <![CDATA[
+      <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+      <input id="button2" type="button" value="button 2" />
+      <div id="target"></div>
+      <script type="text/javascript">
+        $("#button2").click(function(){
+          $("#target").html("boom baby");
+        });
+        alert(parent.document);
+      </script>
+    ]]>
+  </Content>
+</Module>
