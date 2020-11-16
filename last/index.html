@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+     
+        <title>Last Answers</title>
+    </head>
+
+    <body class="body">
+
+    <div class="main text-center"">
+      <br>
+      <br>
+      <h3>Last Answer</h1
+      <br>
+      <br>
+      <br>
+    <img src="../img/face_smile_man2.png"  class="w-25" id="man" alt="face">
+    <img src="../img/face_smile_woman2.png"  class="w-25" id="woman" alt="face">
+      <br>
+
+
+        <br>
+        <input type="text" class="" id="code" sytle="width:200px;">
+         <br>
+       <br>
+      <button id="submit" role="button" class="btn btn-primary">送信</button>
+       <br>
+       <br>
+       
+       <br>
+       <br>
+       <br> 
+
+      
+  </div>
+    </body>
+    
+    <foot>
+    
+    
+       <!-- js読み込み -->   
+      <script>
+
+document.getElementById("man").onclick = function(){
+    var man = document.getElementById("man");
+    if(man.alt == "face"){
+       man.src = "../img/face_smile_man4.png";
+       man.alt = "smile";
+    }else{
+       man.src = "../img/face_smile_man2.png";
+       man.alt = "face";
+    
+    }
+
+}
+
+document.getElementById("woman").onclick = function(){
+    var woman = document.getElementById("woman");
+    if(woman.alt== "face"){
+       woman.src = "../img/face_smile_woman4.png";
+       woman.alt = "smile";
+    }else{
+       woman.src = "../img/face_smile_woman2.png";
+       woman.alt = "face";
+    
+    }
+
+}
+
+
+document.getElementById("submit").onclick = function(){
+var text = document.getElementById("code").value;
+var man = document.getElementById("man");
+var woman = document.getElementById("woman");
+	if(text =="ちかいのキス" && man.alt=="smile" && woman.alt=="smile"){	
+		alert("真エンディング");
+	}else if(text =="ちかいのキス" ){
+		alert("偽エンディング");
+	}else{
+	    alert("答えが間違っているようだ")
+	}
+
+
+}
+      </script>
+      
+    </foot>
+</html>
