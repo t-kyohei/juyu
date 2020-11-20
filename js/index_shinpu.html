@@ -12,25 +12,17 @@
 
     <body class="body">
 
-    <div class="main text-center"">
-      <br>
-      <br>
-      <br>
-      <br>
-
-
-        <label for="code">回答入力</label>
-        <br>
+    <div class="main">
         <br>
         <p class="d-none" id="fail">それは違うようだ</p>
         <p class="d-none" id="success">正解！！</p>
-        <input type="text" class="" id="code" sytle="width:200px;" >
-         <br>
-       <br>
-      <button id="submit" role="button" class="btn btn-primary">送信</button>
+        <input type="text" class="form-control" id="code" sytle="width:200px;" >
        <br>
        <br>
-      <a href="https://sites.google.com/view/happy-wedding-last/%E3%83%9B%E3%83%BC%E3%83%A0" role="button" class="btn btn-primary" id="link" >リンク</a>
+      <button id="submit" role="button" class="btn btn-info btn-lg" >送信</button>
+       <br>
+       <br>
+      <a href="https://sites.google.com/view/happy-wedding-last/%E3%83%9B%E3%83%BC%E3%83%A0" role="button" class="btn btn-primary d-none" id="link" >リンク</a>
        <br>
        <br>
        <br> 
@@ -52,7 +44,7 @@
 
 document.getElementById("submit").onclick = function(){
 var text = document.getElementById("code").value;
-	if(text =="ちかいのキス" ){	
+	if(text =="4912" || text =="４９１２" ){	
         document.getElementById("success").classList.remove("d-none");
         document.getElementById("fail").classList.add("d-none"); 
         document.getElementById("link").click();

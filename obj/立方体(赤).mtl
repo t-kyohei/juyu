@@ -1,0 +1,17 @@
+newmtl ゼラチン
+illum 7
+Kd 1 0 0
+adobe_interior_color 0.863813 0.901457 0.929412
+Ni 1.5
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 1
+map_Pr 名称未設定/ゼラチン_roughness.jpg
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+norm 名称未設定/ゼラチン_normal.jpg
