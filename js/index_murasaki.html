@@ -13,18 +13,23 @@
     <body class="body">
 
     <div class="main text-center">
-
-        <p class="d-none" id="fail">それは違うようだ</p>
-        <p class="d-none" id="success">正解！！</p>
-        <div>
-        <input type="text" class="w-50" id="code"  >
-        </div>
+        <br>
+        <h6 class="d-none" id="huhu">夫婦となるには、<br>決して一人にはせず、<br>二人を示すものに変えて見つめろ<br><br>次は導き出した4桁を入力せよ <br></h6>
+         <br>
+        <input type="text" class="w-50" id="code" >
        <br>
+         <br>
+        <h6 class="d-none" id="fail">それは違うようだ</h6>
+        <br>
+        <p class="d-none" id="success">正解！！</p>
        <br>
       <button id="submit" role="button" class="btn btn-info btn-lg w-25" >送信</button>
-
-      <a href="https://sites.google.com/view/collaboration-phase/%E3%83%9B%E3%83%BC%E3%83%A0" role="button" class="btn btn-primary d-none" id="link" >リンク</a>
-
+       <br>
+       <br>
+      <a href="https://sites.google.com/view/happy-wedding-last/%E3%83%9B%E3%83%BC%E3%83%A0" role="button" class="btn btn-primary d-none" id="link" >リンク</a>
+       <br>
+       <br>
+       <br> 
 
       
   </div>
@@ -46,12 +51,18 @@ var text = document.getElementById("code").value;
 	if(text =="4912" || text =="４９１２" ){	
         document.getElementById("success").classList.remove("d-none");
         document.getElementById("fail").classList.add("d-none"); 
+        document.getElementById("huhu").classList.add("d-none"); 
         document.getElementById("link").click();
 		
-	}else{
-	    document.getElementById("fail").classList.remove("d-none");
+	}else if(text =="ふうふ" || text =="夫婦" ){
+	    document.getElementById("huhu").classList.remove("d-none");
         document.getElementById("success").classList.add("d-none"); 
+        document.getElementById("fail").classList.add("d-none"); 
 	   
+	}else{
+	   document.getElementById("fail").classList.remove("d-none");
+       document.getElementById("success").classList.add("d-none"); 
+	
 	}
 }
       

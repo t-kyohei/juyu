@@ -29,6 +29,11 @@
         <br>
         <input type="text" class="" id="code" sytle="width:200px;">
          <br>
+         <br>
+        <p class="d-none" id="fail">それは違うようだ</p>
+        <p class="d-none" id="another">偽エンディング</p>
+        <p class="d-none" id="success">真エンディング</p>
+       <br>
        <br>
       <button id="submit" role="button" class="btn btn-primary">送信</button>
        <br>
@@ -80,11 +85,17 @@ var text = document.getElementById("code").value;
 var man = document.getElementById("man");
 var woman = document.getElementById("woman");
 	if(text =="ちかいのキス" && man.alt=="smile" && woman.alt=="smile"){	
-		alert("真エンディング");
+		document.getElementById("success").classList.remove("d-none");
+        document.getElementById("fail").classList.add("d-none"); 
+        document.getElementById("another").classList.add("d-none");
 	}else if(text =="ちかいのキス" ){
-		alert("偽エンディング");
+	    document.getElementById("another").classList.remove("d-none");
+        document.getElementById("fail").classList.add("d-none"); 
+        document.getElementById("success").classList.add("d-none");
 	}else{
-	    alert("答えが間違っているようだ")
+	    document.getElementById("fail").classList.remove("d-none");
+        document.getElementById("success").classList.add("d-none"); 
+        document.getElementById("another").classList.add("d-none");
 	}
 
 
