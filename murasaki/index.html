@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    </head>
+
+    <body class="body">
+
+    <div class="main">
+        <br>
+        <h6 class="d-none" id="huhu">夫婦となるには、<br>決して独りにはせず、二人を示すものに変えて見つめろ<br><br>次は現れた4桁を入力せよ <br></h6>
+         <br>
+        <input type="text" class="form-control" id="code" sytle="width:200px;" >
+       <br>
+        <h6 class="d-none" id="fail">それは違うようだ</h6>
+        <br>
+        <p class="d-none" id="success">正解！！</p>
+       <br>
+      <button id="submit" role="button" class="btn btn-info btn-lg w-25" >送信</button>
+       <br>
+       <br>
+      <a href="https://sites.google.com/view/happy-wedding-last/%E3%83%9B%E3%83%BC%E3%83%A0" role="button" class="btn btn-primary d-none" id="link" >リンク</a>
+       <br>
+       <br>
+       <br> 
+
+      
+  </div>
+    </body>
+    
+    <foot>
+    
+    
+       <!-- js読み込み -->   
+      <script>
+            /*
+*送信ボタン押下時のキーワード
+*
+*/
+
+
+document.getElementById("submit").onclick = function(){
+var text = document.getElementById("code").value;
+	if(text =="4912" || text =="４９１２" ){	
+        document.getElementById("success").classList.remove("d-none");
+        document.getElementById("fail").classList.add("d-none"); 
+        document.getElementById("huhu").classList.add("d-none"); 
+        document.getElementById("link").click();
+		
+	}else if(text =="ふうふ" || text =="夫婦" ){
+	    document.getElementById("huhu").classList.remove("d-none");
+        document.getElementById("success").classList.add("d-none"); 
+        document.getElementById("fail").classList.add("d-none"); 
+	   
+	}else{
+	   document.getElementById("fail").classList.remove("d-none");
+       document.getElementById("success").classList.add("d-none"); 
+	
+	}
+}
+      
+      </script>
+      
+      
+      
+  
+    </foot>
+</html>
